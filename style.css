@@ -1,0 +1,386 @@
+/* =====================================================
+   AI STUDENT ATTENTION MONITORING SYSTEM
+   MODERN LIGHT THEME
+===================================================== */
+
+/* Main App */
+
+.stApp {
+    background: #F8FAFC;
+}
+
+/* Hide Streamlit Branding */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.main-title {
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #06B6D4
+    );
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+[data-testid="stSidebar"] {
+    background: white;
+    border-right: 1px solid #E5E7EB;
+}
+
+[data-testid="stSidebar"] * {
+    color: #111827;
+}
+
+/* =====================================================
+   KPI CARDS
+===================================================== */
+
+.metric-card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0px 4px 20px rgba(0,0,0,0.08);
+
+    transition: all 0.3s ease;
+
+    margin-bottom: 10px;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0px 8px 25px rgba(0,0,0,0.12);
+}
+
+.metric-card h3 {
+    color: #64748B;
+    margin-bottom: 10px;
+}
+
+.metric-card h1 {
+    color: #0F172A;
+    font-size: 42px;
+}
+
+/* Different Card Colors */
+
+.students-card {
+    border-left: 6px solid #2563EB;
+}
+
+.focus-card {
+    border-left: 6px solid #10B981;
+}
+
+.distracted-card {
+    border-left: 6px solid #F59E0B;
+}
+
+.drowsy-card {
+    border-left: 6px solid #EC4899;
+}
+
+.sleep-card {
+    border-left: 6px solid #EF4444;
+}
+
+.talking-card {
+    border-left: 6px solid #8B5CF6;
+}
+
+/* =====================================================
+   STREAMLIT METRICS
+===================================================== */
+
+[data-testid="metric-container"] {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    box-shadow:
+        0px 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.stButton > button {
+
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #06B6D4
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 10px 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0px 4px 15px rgba(37,99,235,0.4);
+}
+
+/* =====================================================
+   TOGGLE
+===================================================== */
+
+.stToggle {
+    padding: 10px;
+}
+
+/* =====================================================
+   ALERTS
+===================================================== */
+
+.stSuccess {
+
+    border-radius: 15px;
+}
+
+.stWarning {
+
+    border-radius: 15px;
+}
+
+.stError {
+
+    border-radius: 15px;
+}
+
+/* =====================================================
+   DATAFRAME
+===================================================== */
+
+[data-testid="stDataFrame"] {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    box-shadow:
+        0px 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* =====================================================
+   CHART CONTAINER
+===================================================== */
+
+.chart-card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0px 4px 15px rgba(0,0,0,0.08);
+
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   CAMERA FRAME
+===================================================== */
+
+img {
+
+    border-radius: 20px;
+
+    border: 3px solid #2563EB;
+}
+
+/* =====================================================
+   SECTION HEADERS
+===================================================== */
+
+.section-title {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #0F172A;
+
+    margin-bottom: 15px;
+}
+
+/* =====================================================
+   REPORT CARDS
+===================================================== */
+
+.report-card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0px 4px 15px rgba(0,0,0,0.08);
+
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   ANALYTICS BOX
+===================================================== */
+
+.analytics-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow:
+        0px 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #E5E7EB;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #2563EB;
+
+    border-radius: 10px;
+}
+
+/* =====================================================
+   EXPANDER
+===================================================== */
+
+.streamlit-expanderHeader {
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.stTabs [data-baseweb="tab"] {
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    margin-right: 5px;
+}
+
+/* =====================================================
+   FILE UPLOADER
+===================================================== */
+
+[data-testid="stFileUploader"] {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 15px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .main-title {
+
+        font-size: 24px;
+    }
+
+    .metric-card h1 {
+
+        font-size: 28px;
+    }
+}
